@@ -26,8 +26,8 @@ import com.intellij.psi.impl.source.codeStyle.PersistableCodeStyleSchemes;
 /**
  * @author Idan Moyal
  */
-public class ModuleCodeStyleReformatCodeAction extends ReformatCodeAction
-{
+public class ModuleCodeStyleReformatCodeAction extends ReformatCodeAction {
+
     @Override
     public void actionPerformed(AnActionEvent event) {
         final DataContext dataContext = event.getDataContext();
@@ -44,4 +44,5 @@ public class ModuleCodeStyleReformatCodeAction extends ReformatCodeAction
         }
         super.actionPerformed(event);
     }
+
 }

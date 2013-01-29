@@ -25,7 +25,7 @@
     </actions>
 
     <extensions defaultExtensionNs="com.intellij">
-        <moduleConfigurable id="FormatterConfigurable"
+        <moduleConfigurable id="moduleCodeStyleConfigurable"
                             instance="com.idanmo.plugins.modulecodestyle.ModuleCodeStyleConfigurable"/>
     </extensions>
 </idea-plugin>
