@@ -1,5 +1,5 @@
 <idea-plugin version="2">
-    <id>com.idanmo.modulecodestyle</id>
+    <id>com.idanmo.plugins.modulecodestyle</id>
     <name>Module Code Style</name>
     <version>1.0</version>
     <vendor url="https://github.com/idanmo">Idan Moyal</vendor>
