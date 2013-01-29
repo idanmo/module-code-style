@@ -1,0 +1,31 @@
+<idea-plugin version="2">
+    <id>com.idanmo.modulecodestyle</id>
+    <name>Module Code Style</name>
+    <version>1.0</version>
+    <vendor url="https://github.com/idanmo">Idan Moyal</vendor>
+
+    <description><![CDATA[
+        A plugin for setting and using a specific code style scheme per module
+      ]]></description>
+
+    <change-notes><![CDATA[ 1.0 - Initial Version ]]></change-notes>
+
+    <idea-version since-build="107.105"/>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <module-components>
+        <component>
+            <implementation-class>com.idanmo.plugins.modulecodestyle.ModuleCodeStyleComponent</implementation-class>
+        </component>
+    </module-components>
+
+    <actions>
+        <!-- Action is set in code since the default reformat action is overridden -->
+    </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <moduleConfigurable id="FormatterConfigurable"
+                            instance="com.idanmo.plugins.modulecodestyle.ModuleCodeStyleConfigurable"/>
+    </extensions>
+</idea-plugin>
